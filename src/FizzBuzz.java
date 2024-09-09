@@ -6,6 +6,10 @@ class FizzBuzz {
     public static void main(String[] args) {
 
 
+        main();
+    }
+
+    public static void main() {
         int i = 1;
         while (i < 100) {
             i = doFizzBuzz(i);
@@ -19,22 +23,19 @@ class FizzBuzz {
 
         // Print our appropriate result.
         if (divisibleBy3 && divisibleBy5) {
-            i++;
             System.out.println("Fizz Buzz");
 
         } else if (divisibleBy3) {
-            i++;
             System.out.println("Fizz");
 
         } else if (divisibleBy5) {
-            i++;
             System.out.println("Buzz");
 
         } else {
-            i++;
             System.out.println(i);
 
         }
+        i+=1;
         return i;
     }
 }
